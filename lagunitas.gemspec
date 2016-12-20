@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'rubyzip', '>= 1.0.0'
   spec.add_dependency 'CFPropertyList'
-  spec.add_dependency 'pngdefry', '>= 0.1.0'
+  #spec.add_dependency 'pngdefry', '>= 0.1.0'
 
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'minitest', '>= 5.0'

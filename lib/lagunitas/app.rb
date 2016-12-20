@@ -1,5 +1,4 @@
 require 'cfpropertylist'
-require 'pngdefry'
 
 module Lagunitas
   class App
@@ -57,11 +56,9 @@ module Lagunitas
       path = File.join(@path, "#{name}.png")
       return nil unless File.exist?(path)
 
-      dimensions = Pngdefry.dimensions(path)
+      #dimensions = Pngdefry.dimensions(path)
       {
-        path: path,
-        width: dimensions.first,
-        height: dimensions.last
+        path: path
       }
     rescue Errno::ENOENT
       nil
